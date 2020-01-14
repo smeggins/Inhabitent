@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+
+/* Front page */
+
+#page {
+    display: grid;
+    grid-template-rows: 3fr;
+}
+
+header {
+    grid-row: 1;
+}
+
+#content {
+    width: 100%;
+    grid-row: 2;
+    width: $base__width;
+    margin: 0px auto;
+}
+
+footer {
+    grid-row: 3;
+}
+
+.site-content {
+    display: flex;
+}
+
+.content-area {
+    padding: 3em 0em;
+    padding-right: 5%;
+}
+
+.widget-area {
+    padding: 3em 0em;
+    padding-left: 5%;
+}

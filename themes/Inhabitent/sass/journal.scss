@@ -1,0 +1,18 @@
+.journal-article {
+    position: relative;
+
+    h2, div {
+        position: absolute;
+    }
+
+    h2 {
+        top: 1em;
+        max-width: 75%;
+    }
+
+    div {
+        bottom: 0.56em;
+        right: 0em;
+        padding: 0.3rem 1.5rem;
+    }
+}

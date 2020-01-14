@@ -1,0 +1,10 @@
+body {
+    background-color: black;
+}
+body.login div#login h1 a {
+    background-image: url('../../assets/images/logos/inhabitent-logo-full.svg');
+    background-size: contain;
+    margin-bottom: 50px;
+    width: 30vw;
+    height: 30vw;
+}

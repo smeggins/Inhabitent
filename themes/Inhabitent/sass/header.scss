@@ -1,0 +1,44 @@
+.site-header {
+    display: flex;
+    border-bottom: #e1e1e1 solid 1px;
+    background-color: transparent;
+
+    li {
+        margin: 0 5px;
+    }
+}
+
+.menu-home-button-container {
+    grid-column: 1;
+    justify-self: start;
+    background-image: url('http://localhost/InhabitentSite/wp-content/uploads/2020/01/inhabitent-logo-tent.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    a {
+        opacity: 0;
+    }
+}
+
+.home-icon {
+    width: 3vw;
+    height: 2vw;
+}
+
+.main-navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px auto;
+    padding: .5rem 0px;
+    max-width: $base__width;
+}
+
+.menu-top-nav-container {
+    justify-self:end;
+    grid-column: 2;
+    margin: auto 0px;
+}
+
+.search-form {
+    grid-column: 2;
+}
