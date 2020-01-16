@@ -13,11 +13,10 @@ header {
     grid-row: 1;
 }
 
-#content {
+.front-page-container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    grid-row: 2;
-    width: $base__width;
-    margin: 0px auto;
 }
 
 footer {
@@ -26,6 +25,10 @@ footer {
 
 .site-content {
     display: flex;
+    width: 100%;
+    grid-row: 2;
+    width: $base__width;
+    margin: 0px auto;
 }
 
 .content-area {
@@ -36,4 +39,62 @@ footer {
 .widget-area {
     padding: 3em 0em;
     padding-left: 5%;
+}
+
+.mini-post-container {
+    display: flex;
+    flex-direction: row;
+
+    li {
+        max-height: 250px;
+    }
+}
+
+.mini-post {
+    border: 1px solid $color__grey_border;
+    margin: 1vw;
+
+    .mini-post-thumbnail {
+        background-color: $color__grey_border;
+    }
+
+    img {
+        max-height: 230px;
+    }
+
+    .mini-post-content {
+        padding: .75rem;
+
+        .mini-post-title {
+            color: $color__branding_green;
+            font-size: 1.3rem;
+            line-height: 1.25;
+        }
+    }
+
+
+}
+
+.front-page-container h2 {
+    text-transform: uppercase;
+    color: $color__branding_purple;
+    margin: 0px auto;
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: $font__accent;
+}
+
+.taxonomy-mini-post-container {
+    display: flex;
+
+    .taxonomy-mini-post {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h3, p {
+        text-align: center;
+    }
 }
