@@ -9,8 +9,23 @@
     grid-template-rows: 3fr;
 }
 
+h1 {
+    font-size: 2.4rem;
+    font-family: $font__accent;
+}
+
+h2 {
+    font-size: 2.1rem;
+    font-family: $font__accent;
+}
+
 header {
     grid-row: 1;
+}
+
+a {
+    font-family: $font__accent;
+    font-size: 1.2rem;
 }
 
 .front-page-container {
@@ -72,13 +87,26 @@ footer {
         }
     }
 
+    // .map-container {
+    //     width: 100%;
+
+        iframe {
+            width:100%;
+        }
+        fieldset, legend {
+            margin:0;
+            padding:0;
+            width:100%;
+        }
+    // }
+
 
 }
 
 .front-page-container h2 {
     text-transform: uppercase;
     color: $color__branding_purple;
-    margin: 0px auto;
+    margin: 3.75rem auto 2.2rem auto;
     font-size: 2.4rem;
     letter-spacing: 2px;
     font-weight: 400;
@@ -87,14 +115,43 @@ footer {
 
 .taxonomy-mini-post-container {
     display: flex;
+    justify-content: space-between;
 
     .taxonomy-mini-post {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        flex: 0 1 23.5%;
+        max-width: 23.5%;
+        padding: .75rem;
+        border: 1px solid $color__grey_border;
+        border-top-width: 5px;;
+
+        .taxonomy-mini-post-logo {
+            width: 4vw;
+            margin: 0px auto;
+        }
     }
 
-    h3, p {
+
+
+    p {
         text-align: center;
+        margin: 1rem 0rem;
+    }
+
+    .taxonomy-mini-post-button-container {
+        display: flex;
+        justify-content: center;
+        background-color: $color__branding_green;
+        padding: .5rem 1.5rem;
+        max-width: 66%;
+        margin: 0px auto;
+
+        a {
+            color: white;
+            font-size: .9rem;
+            font-family: $font__accent;
+        }
     }
 }

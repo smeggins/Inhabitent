@@ -31,6 +31,22 @@
 					<?php wp_nav_menu( array( 'menu' => 'home-button' )) ?>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
+
+				<!-- <?php 
+					$args = array();
+					$front_page_hero = get_posts( $args );
+					foreach ( $front_page_hero as $heroimg ):; ?>
+						
+						<?php echo '<div class="hero-image-container">';
+							echo '<div class="hero-image">' . $herimg . '</div>';
+						echo '</div>';
+						?>
+
+				<?php endforeach; wp_reset_postdata(); ?> -->
+
 			</header><!-- #masthead -->
 
+
 			<div id="content" class="site-content">
+
+			

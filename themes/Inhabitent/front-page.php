@@ -23,8 +23,10 @@
                                     echo '<div class="taxonomy-mini-post-logo">';
                                         echo '<img src="' . $taxonomi_mini_post_logo[$i] . '"></img>';
                                     echo '</div>';
-                                    echo '<h3 class="taxonomy-mini-post-name">' . $term->name . '</h3>';
                                     echo '<p class="taxonomy-mini-post-description">' . $term->description . '</p>';
+                                    echo '<div class="taxonomy-mini-post-button-container">';
+                                        echo '<a class="taxonomy-mini-post-button">' . $term->name . ' STUFF</a>';
+                                    echo '</div>';
                                 echo '</div>';
                                 $i++;
                             };
