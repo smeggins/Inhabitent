@@ -19,8 +19,11 @@
 	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
-
-			<header id="masthead" class="site-header" role="banner">
+			<?php if( is_front_page() || is_page('about') ): ?>
+			<?php echo '<header id="masthead" class="site-header front-about-header" role="banner">'; ?>
+			<?php else: ?>
+			<?php echo '<header id="masthead" class="site-header" role="banner">'; ?>
+			<?php endif; ?>
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
@@ -31,18 +34,6 @@
 					<?php wp_nav_menu( array( 'menu' => 'home-button' )) ?>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
-
-				<!-- <?php 
-					$args = array();
-					$front_page_hero = get_posts( $args );
-					foreach ( $front_page_hero as $heroimg ):; ?>
-						
-						<?php echo '<div class="hero-image-container">';
-							echo '<div class="hero-image">' . $herimg . '</div>';
-						echo '</div>';
-						?>
-
-				<?php endforeach; wp_reset_postdata(); ?> -->
 
 			</header><!-- #masthead -->
 

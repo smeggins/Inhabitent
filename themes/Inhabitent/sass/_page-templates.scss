@@ -5,8 +5,10 @@
 /* Front page */
 
 #page {
-    display: grid;
-    grid-template-rows: 3fr;
+    display: flex;
+    flex-direction: column;
+    // display: grid;
+    // grid-template-rows: 3fr;
 }
 
 h1 {
@@ -20,7 +22,21 @@ h2 {
 }
 
 header {
-    grid-row: 1;
+    width: 100%;
+}
+
+.front-about-header {
+    position: absolute;
+    border-bottom: 0px !important;
+    z-index: 2;
+
+    a {
+        color: white;
+    }
+
+    .menu-home-button-container {
+        background-image: url('http://localhost/InhabitentSite/wp-content/uploads/2020/01/inhabitent-logo-tent-white.svg');
+    }
 }
 
 a {
@@ -31,23 +47,25 @@ a {
 .front-page-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
 }
 
 footer {
-    grid-row: 3;
+    // grid-row: 3;
 }
 
 .site-content {
     display: flex;
+    // grid-row: 2;
     width: 100%;
-    grid-row: 2;
-    width: $base__width;
+    height: 100%;
+    max-width: $base__width;
     margin: 0px auto;
 }
 
 .content-area {
-    padding: 3em 0em;
+    padding: 0em 0em;
     padding-right: 5%;
 }
 
@@ -67,7 +85,7 @@ footer {
 
 .mini-post {
     border: 1px solid $color__grey_border;
-    margin: 1vw;
+    margin: .6vw;
 
     .mini-post-thumbnail {
         background-color: $color__grey_border;
@@ -84,23 +102,19 @@ footer {
             color: $color__branding_green;
             font-size: 1.3rem;
             line-height: 1.25;
+            font-family: $font__accent;
+            font-weight: bold;
+        }
+
+        .mini-post-comment-date {
+            font-size: .75rem;
         }
     }
+}
 
-    // .map-container {
-    //     width: 100%;
-
-        iframe {
-            width:100%;
-        }
-        fieldset, legend {
-            margin:0;
-            padding:0;
-            width:100%;
-        }
-    // }
-
-
+.map {
+    width: 100%;
+    height: 17vw;
 }
 
 .front-page-container h2 {
@@ -141,17 +155,55 @@ footer {
     }
 
     .taxonomy-mini-post-button-container {
-        display: flex;
-        justify-content: center;
-        background-color: $color__branding_green;
-        padding: .5rem 1.5rem;
+        @include button;
         max-width: 66%;
         margin: 0px auto;
-
-        a {
-            color: white;
-            font-size: .9rem;
-            font-family: $font__accent;
-        }
     }
+}
+
+.user-input {
+    input {
+        background-color: #f4f4f4;
+        border: 1px solid #e1e1e1;
+        width: 23vw;
+    }
+
+    p {
+        font-size: 1.1rem;
+        font-family: $font__accent;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 5px;
+
+    }
+
+    .user-input-message {
+        width: 100%;
+        height: 15.5vw;
+        overflow: auto;
+    }
+}
+
+.submit-button {
+    @include button;
+    max-width: 5.5vw;
+    margin-top: 1.5rem;
+}
+
+.hero-image-container {
+    background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url(http://localhost/InhabitentSite/wp-content/uploads/2020/01/home-hero-scaled.jpg) no-repeat center bottom;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin-left: calc(((100vw - 1120px)/2)*-1);
+}
+
+.front-page-container {
+    width: 100%;
+    height: 100%;
+}
+
+.home-hero {
+    width: 100%;
+    height: 100%;
 }

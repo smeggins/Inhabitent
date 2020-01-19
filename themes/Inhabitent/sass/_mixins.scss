@@ -11,3 +11,15 @@
 	margin-right: auto;
 }
 
+@mixin button {
+	display: flex;
+	justify-content: center;
+	background-color: $color__branding_green;
+	padding: .5rem 1.5rem;
+
+	a {
+		color: white;
+		font-size: .9rem;
+		font-family: $font__accent;
+	}
+}

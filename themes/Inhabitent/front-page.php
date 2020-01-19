@@ -4,7 +4,7 @@
 
     <?php while ( have_posts() ) : the_post(); ?>
 
-        <div class='posts-container home-hero'>
+        <div class='posts-container home-hero' id="hero-image-id">
             <?php the_content() ?>
         </div>
         <h2> SHOP STUFF </h2>

@@ -22,6 +22,21 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
+			<form method="post" class="user-input">
+				<p>name</p>
+				<input name="name">
+				<p>email</p>
+				<input name="email">
+				<p>subject</p>
+				<input name="subject">
+				<p>message</p>
+				<input name="message" class="user-input-message">
+			</form>
+
+			<div class="submit-button">
+				<a class="">submit</a>
+			</div>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
