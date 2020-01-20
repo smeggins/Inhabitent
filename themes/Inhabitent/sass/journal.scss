@@ -1,12 +1,13 @@
 .journal-article {
     position: relative;
+    font-family: $font__accent;
 
     h2, div {
         position: absolute;
     }
 
     h2 {
-        top: 1em;
+        top: 0em;
         max-width: 75%;
     }
 
@@ -14,5 +15,6 @@
         bottom: 0.56em;
         right: 0em;
         padding: 0.3rem 1.5rem;
+        width: 50%;
     }
 }

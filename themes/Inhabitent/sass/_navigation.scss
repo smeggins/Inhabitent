@@ -26,10 +26,13 @@ a {
 
 .journal-article h2 {
 	background-color: $color__branding_green;  
+	line-height: 1.2;
 
 	a {
 		color: white;
 		text-decoration: none;
+		font-size: 2.25rem;
+		letter-spacing: 2px;
 	}
 }
 

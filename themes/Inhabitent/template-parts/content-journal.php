@@ -25,4 +25,7 @@
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-content -->
+	<div class="journal-mini-post-button-container read-more">
+        <a href="<?php echo esc_url( get_the_permalink( $post_id ) ); ?>" class="journal-mini-post-button">READ MORE</a>
+    </div>
 </article><!-- #post-## -->

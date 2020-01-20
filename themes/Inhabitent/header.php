@@ -22,7 +22,7 @@
 			<?php if( is_front_page() || is_page('about') ): ?>
 			<?php echo '<header id="masthead" class="site-header front-about-header" role="banner">'; ?>
 			<?php else: ?>
-			<?php echo '<header id="masthead" class="site-header" role="banner">'; ?>
+			<?php echo '<header id="masthead" class="site-header every-other-header" role="banner">'; ?>
 			<?php endif; ?>
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>

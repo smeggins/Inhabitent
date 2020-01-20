@@ -25,7 +25,7 @@
                                     echo '</div>';
                                     echo '<p class="taxonomy-mini-post-description">' . $term->description . '</p>';
                                     echo '<div class="taxonomy-mini-post-button-container">';
-                                        echo '<a class="taxonomy-mini-post-button">' . $term->name . ' STUFF</a>';
+                                        echo '<a href="' . get_term_link( $term ) . '" class="taxonomy-mini-post-button">' . $term->name . ' STUFF</a>';
                                     echo '</div>';
                                 echo '</div>';
                                 $i++;

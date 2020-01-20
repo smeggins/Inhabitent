@@ -8,7 +8,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main find-us-page-container" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 			<h1>
@@ -23,14 +23,14 @@ get_header(); ?>
 			<?php endwhile; // End of the loop. ?>
 
 			<form method="post" class="user-input">
-				<p>name</p>
+				<p>name <span class="mandatory">*</span></p>
 				<input name="name">
-				<p>email</p>
+				<p>email <span class="mandatory">*</span></p>
 				<input name="email">
-				<p>subject</p>
+				<p>subject <span class="mandatory">*</span></p>
 				<input name="subject">
-				<p>message</p>
-				<input name="message" class="user-input-message">
+				<p>message <span class="mandatory">*</span></p>
+				<textarea name="message" class="user-input-message" cols="40" rows="10"></textarea>
 			</form>
 
 			<div class="submit-button">

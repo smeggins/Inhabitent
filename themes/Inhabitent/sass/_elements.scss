@@ -66,9 +66,17 @@ dd {
   margin: 0 $base__space-unit $base__space-unit;
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   height: auto; /* Make sure images are scaled correctly. */
   max-width: 100%; /* Adhere to container width. */
+}
+
+header {
+  z-index: 100;
 }
 
 table {
@@ -86,4 +94,19 @@ article img {
 
 footer {
   margin-top: 2vw;
+}
+
+.every-other-header {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.85);
+  
+}
+
+.site-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
 }
