@@ -14,17 +14,17 @@
 					<div class='contactinfo'>
 						<ul>
 							<li>CONTACT INFO</li>
-							<li>info@inhabitent.com</li>
-							<li>778-456-7891</li>
-							<li>SOCIAL MEDIA LINKS</li>
+							<li><span class="icon-envelop"></span> info@inhabitent.com</li>
+							<li><span class="icon-phone"></span> 778-456-7891</li>
+							<li><span class="icon-facebook2"></span> <span class="icon-twitter"></span> <span class="icon-google-plus2"></span></li>
 						</ul>
 					</div>
 					<div class='Buisnesshours'>
 						<ul>
 							<li>BUISNESS HOURS</li>
-							<li>Monday-Friday: 9am to 5pm</li>
-							<li>Saturday: 10am to 2pm</li>
-							<li>Sunday: Closed</li>
+							<li><b>Monday-Friday:</b> 9am to 5pm</li>
+							<li><b>Saturday:</b> 10am to 2pm</li>
+							<li><b>Sunday:</b> Closed</li>
 						</ul>
 
 					</div>

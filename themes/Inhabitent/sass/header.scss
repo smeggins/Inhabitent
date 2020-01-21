@@ -3,7 +3,7 @@
     border-bottom: #e1e1e1 solid 1px;
 
     li {
-        margin: 0 5px;
+        margin: 3px 1rem 0px 0px;
     }
 }
 
@@ -34,14 +34,56 @@
     margin: 0px auto;
     padding: .5rem 0px;
     max-width: $base__width;
+    align-items: center;
+    overflow: hidden;
 }
 
 .menu-top-nav-container {
     justify-self:end;
     grid-column: 2;
+    grid-row: 1;
     margin: auto 0px;
 }
 
 .search-form {
     grid-column: 2;
+    grid-row: 1;
+    
+    fieldset {
+        margin: 0px;
+        padding: 0px;
+        border: none;
+        position: relative;
+        left: 20rem;
+
+        input {
+            border: none;
+            background-color: transparent;
+        }
+    }
+
+    button {
+        display: none;
+    }
+
+}
+
+.nav-link-container {
+    display: flex;
+
+    span {
+        margin: .7rem 1rem 0;
+    }
+
+     button {
+         margin: 0px;
+         padding: 0px;
+         background-color: transparent;
+         border: unset;
+         box-shadow: unset;
+     }
+}
+
+button:focus {
+    outline: 0;
 }

@@ -11,15 +11,15 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 ?>
 
 <div id="secondary" class="widget-area" role="complementary">
-	<div>
-		<h2>Contact Us</h2>
+	<div class="contact-us-container">
+		<h2>Contact Info</h2>
 		<ul>
-			<li>778-456-7891</li>
-			<li>info@inhabitent.com</li>
-			<li>1490 W Broadway Vancouver, BC V6H 1H5</li>
+			<li><span class="icon-phone"></span> <span class="sidebar-branding">778-456-7891</span></li>
+			<li><span class="icon-envelop"></span> <span class="sidebar-branding">info@inhabitent.com</span></li>
+			<li><span class="icon-location"></span> 1490 W Broadway Vancouver, BC V6H 1H5</li>
 		</ul>
 	</div>
-	<div>
+	<div class="business-hours-container">
 		<h2>Business Hours</h2>
 		<ul>
 			<li><b>Monday-Friday:</b> 9am to 5pm</li>

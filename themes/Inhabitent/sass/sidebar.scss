@@ -5,5 +5,28 @@
     ul {
         margin: 0px;
         padding: 0px;
+
+        li {
+            margin: .75rem 0rem;
+
+            span {
+                margin-right: .5rem;
+            }
+        }
     }
+
+    h2 {
+        color: $color__branding_purple;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+    }
+}
+
+.sidebar-branding {
+    color: $color__branding_green;
+}
+
+.contact-us-container {
+    margin-top: 4vw;
 }

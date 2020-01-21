@@ -28,6 +28,10 @@ q {
   }
 }
 
+button:focus {
+  outline: 0;
+}
+
 hr {
   background-color: $color__background-hr;
   border: 0;

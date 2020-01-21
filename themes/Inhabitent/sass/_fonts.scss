@@ -77,3 +77,55 @@
     font-weight: bold;
     font-style: normal;
   }
+
+  @font-face {
+  font-family: 'Inhabitant-icons';
+  src:  url('../../assets/fonts/Inhabitant-icons-v1.0/fonts/Inhabitant-icons.eot?pi4xet');
+  src:  url('../../assets/fonts/Inhabitant-icons-v1.0/fonts/Inhabitant-icons.eot?pi4xet#iefix') format('embedded-opentype'),
+    url('../../assets/fonts/Inhabitant-icons-v1.0/fonts/Inhabitant-icons.ttf?pi4xet') format('truetype'),
+    url('../../assets/fonts/Inhabitant-icons-v1.0/fonts/Inhabitant-icons.woff?pi4xet') format('woff'),
+    url('../../assets/fonts/Inhabitant-icons-v1.0/fonts/Inhabitant-icons.svg?pi4xet#Inhabitant-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Inhabitant-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-location:before {
+  content: "\e947";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-google-plus2:before {
+  content: "\ea8c";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-pinterest:before {
+  content: "\ead1";
+}

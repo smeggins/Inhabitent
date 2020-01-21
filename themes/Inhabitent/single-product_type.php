@@ -14,8 +14,6 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
-			<?php echo CFS()->get( 'Price' ); ?>
-
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->

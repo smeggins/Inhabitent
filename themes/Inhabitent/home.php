@@ -23,6 +23,10 @@ get_header(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'journal' ); ?>
 
+				<div class="journal-mini-post-button-container read-more">
+					<a href="<?php echo esc_url( get_the_permalink( $post_id ) ); ?>" class="journal-mini-post-button">READ MORE &#8594</a>
+				</div>
+
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
