@@ -72,6 +72,23 @@ dd {
 
 a {
   text-decoration: none;
+  font-family: $font__accent;
+  font-size: 1rem;
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-family: $font__accent;
+}
+
+h2 {
+  font-size: 2.1rem;
+  font-family: $font__accent;
 }
 
 img {
@@ -81,6 +98,12 @@ img {
 
 header {
   z-index: 100;
+  width: 100%;
+  
+  &.front-about-header {
+    border-bottom: 0px;
+}
+
 }
 
 table {
@@ -103,6 +126,10 @@ footer {
 .every-other-header {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.85);
+
+  button {
+    color: $color__branding_green;
+  }
   
 }
 

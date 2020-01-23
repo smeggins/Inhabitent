@@ -1,4 +1,4 @@
-.widget-area {
+.side-bar-widget-area {
     border-left: #e1e1e1 solid 1px;
     margin-left: 5%;
 
@@ -21,12 +21,13 @@
         letter-spacing: 2px;
         font-size: 1.5rem;
     }
+
+    .sidebar-branding {
+        color: $color__branding_green;
+    }
+    
+    .contact-us-container {
+        margin-top: 4vw;
+    }
 }
 
-.sidebar-branding {
-    color: $color__branding_green;
-}
-
-.contact-us-container {
-    margin-top: 4vw;
-}

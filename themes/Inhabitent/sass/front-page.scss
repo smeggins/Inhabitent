@@ -1,0 +1,28 @@
+.front-about-header {
+    position: absolute;
+    z-index: 2;
+
+    a {
+        color: white;
+        text-shadow: 1px 1px 2px #323232
+    }
+
+    .menu-home-button-container {
+        background-image: url('http://localhost/InhabitentSite/wp-content/uploads/2020/01/inhabitent-logo-tent-white.svg');
+    }
+
+    span {
+        color: white;
+    }
+}
+
+.front-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#hero-image-id {
+    background-position-y: 0px !important;
+}

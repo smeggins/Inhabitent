@@ -30,13 +30,13 @@
 
 			</div>
 			<div class="single-buttons-container">
-				<div class="journal-mini-post-button-container read-more">
+				<div class="journal-mini-post-button-container read-more single-product-button">
 					<a href="" class="journal-mini-post-button"><span class="icon-facebook2"></span> LIKE</a>
 				</div>
-				<div class="journal-mini-post-button-container read-more">
+				<div class="journal-mini-post-button-container read-more single-product-button">
 					<a href="" class="journal-mini-post-button"><span class="icon-twitter"></span> TWEET</a>
 				</div>
-				<div class="journal-mini-post-button-container read-more">
+				<div class="journal-mini-post-button-container read-more single-product-button">
 					<a href="" class="journal-mini-post-button"><span class="icon-pinterest"></span> PIN</a>
 				</div>
 			</div>

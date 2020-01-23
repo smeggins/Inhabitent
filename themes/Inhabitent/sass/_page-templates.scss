@@ -4,57 +4,6 @@
 
 /* Front page */
 
-#page {
-    display: flex;
-    flex-direction: column;
-}
-
-h1 {
-    font-size: 2.4rem;
-    font-family: $font__accent;
-}
-
-h2 {
-    font-size: 2.1rem;
-    font-family: $font__accent;
-}
-
-header {
-    width: 100%;
-}
-
-.front-about-header {
-    position: absolute;
-    border-bottom: 0px !important;
-    z-index: 2;
-
-    a {
-        color: white;
-        margin: 0px 5px;
-        text-shadow: 1px 1px 2px #323232
-    }
-
-    .menu-home-button-container {
-        background-image: url('http://localhost/InhabitentSite/wp-content/uploads/2020/01/inhabitent-logo-tent-white.svg');
-    }
-}
-
-a {
-    font-family: $font__accent;
-    font-size: 1rem;
-}
-
-.front-page-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-}
-
-#hero-image-id {
-    background-position-y: 0px !important;
-}
-
 .site-content {
     display: flex;
     width: 100%;
@@ -147,8 +96,6 @@ a {
         }
     }
 
-
-
     p {
         text-align: center;
         margin: 1rem 0rem;
@@ -216,7 +163,11 @@ input, textarea {
     width: 32%;
     background-color: white;
     border: 1px solid black;
-    padding: .5rem 0.25rem;
+    padding: 0px;
+
+    &:hover {
+        background-color: $color__branding_green;
+    }
 
     span {
         margin-right: .5rem;
@@ -225,6 +176,8 @@ input, textarea {
     a {
         color: black;
         font-size: .9rem;
+        padding: .5rem 0.25rem;
+
     }
 }
 
@@ -232,6 +185,7 @@ input, textarea {
 
 .read-more {
     margin: 1em 0px;
+    width: 20%;
 }
 
 .category-journal {
@@ -279,6 +233,10 @@ input, textarea {
 .single-buttons-container, .single-product-container, .cat-tag-container {
     display: flex;
     justify-content: space-between;
+}
+
+.single-product-button {
+    width: 30%;
 }
 
 .single-product-container {
@@ -433,4 +391,73 @@ input, textarea {
             display: none;
         }
     }
+}
+
+// 404
+
+.error-404 {
+    margin-top: 4vw;
+
+    h1 {
+        font-size: 2.35rem;
+        text-transform: uppercase;
+    }
+
+    ul {
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    fieldset {
+        border: unset;
+        padding: 0px;
+        margin: 1vw 0px;
+
+        input {
+            border: 1px solid $color__grey_border;
+        }
+
+        button {
+            display: none;
+        }
+    }
+}
+
+// search
+
+.search-results-page {
+    margin-top: 4vw;
+
+    h1 {
+        font-size: 2.5rem;
+        border-bottom: 1px solid $color__grey_border;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        margin-left: 0px;
+        padding-left: 0px;
+
+        a {
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+.search-read-more {
+    width: 20%;
+}
+
+.journal {
+    margin-top: 4vw;
+
+    article {
+        margin-top: 3vw;
+    }
+}
+
+.top-page-buffer {
+    margin-top: 6vw;
 }

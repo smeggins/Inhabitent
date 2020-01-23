@@ -4,8 +4,11 @@
  *
  * @package RED_Starter_Theme
  */
-
+if ( ! is_active_sidebar( 'sidebar-1' ) || ! is_active_sidebar( 'sidebar-2' ) ) {
+	return;
+}
 ?>
+
 
 			</div>
 
@@ -13,18 +16,23 @@
 				<div class="site-info">
 					<div class='contactinfo'>
 						<ul>
-							<li>CONTACT INFO</li>
-							<li><span class="icon-envelop"></span> info@inhabitent.com</li>
-							<li><span class="icon-phone"></span> 778-456-7891</li>
+							<li class="footer-brand-color">CONTACT INFO</li>
+							<?php
+							if ( is_active_sidebar( 'sidebar-2' ) ) : //check the sidebar if used.
+								dynamic_sidebar( 'sidebar-2' );  // show the sidebar.
+							endif;
+							?>
 							<li><span class="icon-facebook2"></span> <span class="icon-twitter"></span> <span class="icon-google-plus2"></span></li>
 						</ul>
 					</div>
 					<div class='Buisnesshours'>
 						<ul>
-							<li>BUISNESS HOURS</li>
-							<li><b>Monday-Friday:</b> 9am to 5pm</li>
-							<li><b>Saturday:</b> 10am to 2pm</li>
-							<li><b>Sunday:</b> Closed</li>
+							<li class="footer-brand-color">BUISNESS HOURS</li>
+							<?php
+							if ( is_active_sidebar( 'sidebar-1' ) ) : //check the sidebar if used.
+								dynamic_sidebar( 'sidebar-1' );  // show the sidebar.
+							endif;
+							?>
 						</ul>
 
 					</div>

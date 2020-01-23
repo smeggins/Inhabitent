@@ -34,7 +34,7 @@
 					<?php wp_nav_menu( array( 'menu' => 'home-button' )) ?>
 					<div class="nav-link-container">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-						<button><span class="icon-search"></span></button>
+						<button class="search-button"><span class="icon-search"></span></button>
 						<?php get_search_form(); ?>
 					</div>
 				</nav><!-- #site-navigation -->
