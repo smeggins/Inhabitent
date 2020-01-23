@@ -20,9 +20,9 @@ get_header(); ?>
 			<?php the_archive_description( '<div class="taxonomy-container">', '</div>' ); ?>
 
 
-<div class="products-mini-posts-container">
+            <div class="products-mini-posts-container">
 			
-<?php while ( have_posts() ) : the_post(); ?>
+            <?php while ( have_posts() ) : the_post(); ?>
 
                 <div class="products-mini-posts">
                     <a href="<?php echo esc_url( get_the_permalink( $post_id ) ); ?>" class="products-mini-post-image">

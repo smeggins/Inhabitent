@@ -1,0 +1,162 @@
+.single-buttons-container, .single-product-container, .cat-tag-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.single-product-button {
+    width: 30%;
+}
+
+.single-product-container {
+    margin-top: 6vw;
+}
+
+.single-content-container {
+    // margin-left: 1.5rem;
+    max-width: 48%;
+
+    h1 {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .price {
+        font-family: $font__accent;
+        font-size: 1.75rem;
+        margin: 0px;
+    }
+}
+
+.single-image-container {
+    max-width: 48%;
+}
+
+.single-buttons-container {
+    max-width: 60%;
+}
+
+.cat-tag-container {
+    margin: 0px;
+    padding: 0px;
+    justify-content: unset;
+
+    li {
+        margin-right: 1rem;
+        font-family: $font__accent;
+
+        a {
+            text-transform: uppercase;
+        }
+    }
+}
+
+.comments-area {
+
+    h2 {
+        color: $color__branding_purple;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+}
+
+.comment-author-avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.comment-list {
+    margin: 0px;
+    padding: 0px;
+}
+
+.comment-body {
+    display: flex;
+    margin-bottom: 1.5rem;
+
+    a {
+        font-family: $font__main;
+    }
+
+    .reply {
+        margin: 1rem 0px;
+    }
+
+    .comment-author-avatar {
+        margin-right: 1rem;
+    }
+
+    .comment-content {
+        width: 100%;
+        padding-left: 2rem;
+        border-bottom: 1px solid $color__grey_border;
+
+        time {
+            color: grey;
+        }
+
+        .fn {
+            font-weight: 700;
+        }
+    }
+}
+
+.comment-reply-title {
+    font-size: 1.8rem;
+    font-family: $font__accent;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.comment-respond {
+    form {
+        display: grid;
+        grid-template-rows: .5fr 3fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1rem;
+
+        label {
+            font-family: $font__accent;
+            font-size: 1.25rem;
+        }
+
+        p {
+            display: flex;
+            flex-direction: column;
+        }
+
+        :first-child {
+            grid-column: 1 / span 2;
+            grid-row: 1;
+            margin: 0px;
+        }
+
+        .comment-form-comment {
+            grid-column: 1 / span 2;
+        }
+
+        .comment-form-url {
+            grid-column: 1 / span 2; 
+        }
+
+        .form-submit {
+            grid-row: 5;
+            width: 25%;
+
+            .submit {
+                color: white;
+                font-family: $font__accent;
+                font-size: 1rem;
+                background-color: $color__branding_green;
+                box-shadow: none;
+                text-shadow: none;
+            }
+        }
+
+        .comment-form-cookies-consent {
+            display: none;
+        }
+    }
+}

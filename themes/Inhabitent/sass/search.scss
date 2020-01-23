@@ -1,0 +1,36 @@
+.search-results-page {
+    margin-top: 4vw;
+
+    h1 {
+        font-size: 2.5rem;
+        border-bottom: 1px solid $color__grey_border;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        margin-left: 0px;
+        padding-left: 0px;
+
+        a {
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+.search-read-more {
+    width: 20%;
+}
+
+.journal {
+    margin-top: 4vw;
+
+    article {
+        margin-top: 3vw;
+    }
+}
+
+.top-page-buffer {
+    margin-top: 6vw;
+}

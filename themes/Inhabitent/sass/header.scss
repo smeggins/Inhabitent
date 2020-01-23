@@ -19,13 +19,11 @@
                 border: none;
                 background-color: transparent;
             }
-    
         }
     
         button {
             display: none;
         }
-    
     }
 }
 
@@ -78,6 +76,7 @@
         transition: left 1s;
         left: 11rem;
     }
+
     span {
         margin: .7rem 1rem 0;
         font-size: 1rem;

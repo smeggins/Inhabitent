@@ -21,6 +21,17 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    height: 100%;
+
+    h2 {
+        text-transform: uppercase;
+        color: $color__branding_purple;
+        margin: 3.75rem auto 2.2rem auto;
+        font-size: 2.4rem;
+        letter-spacing: 2px;
+        font-weight: 400;
+        font-family: $font__accent;
+    }
 }
 
 #hero-image-id {
