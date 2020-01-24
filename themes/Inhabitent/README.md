@@ -1,21 +1,38 @@
-# RED Starter
+![Alt text](/Applications/MAMP/htdocs/inhabitentSite/wp-content/themes/Inhabitent/assets/images)
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+# Inhabitent
 
-## Installation
+inhabitent is a shopping site themed around camping and fun outdoors
 
-### 1. Download me (don't clone me!)
+## Technologies Used
 
-Then add me to your `wp-content` directory.
+HTML, CSS, JavaScript, NPM, NODE, 
+Gulp: Terser, Rename, BrowserSync, Eslint, Sass, AutoPrefixer, cssnano
+Wordpress
 
-### 2. Rename the `redstarter-master` directory
+### Personal Learnings
 
-Make sure that the theme directory name is project appropriate!
+Wordpress.... I have learned a lot about the ins and outs of wordpress. More than that I have learned what web-development is capable of. If someone can make wordpress I can make anything.
 
-### 3. Install the dev dependencies
+## Built With
 
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
+* Javascript
+* HTML
+* CSS
+* NODE
+* NPM
+* WORDPRESS
 
-### 4. Update the proxy in `gulpfile.js`
+## Authors
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+* **Phillip (Smeggins) Chadwick** - Main Author, Primary Programmer
+
+## License
+
+This project is un-licenced and free to use in any way
+
+## Acknowledgments
+
+* Red Academy
+* My Fellow Students
+* My instructor Anvit
