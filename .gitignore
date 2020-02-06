@@ -10,7 +10,7 @@ plugins/*
 !plugins/product-functionality/
 !plugins/business-hours/
 !plugins/contact-info-inhabitent/
-!inhabitent-blocks-master
+!plugin/inhabitent-blocks-master/
 # Ignore everything in "themes" except the active theme. #
 themes/*
 !themes/Inhabitent/
